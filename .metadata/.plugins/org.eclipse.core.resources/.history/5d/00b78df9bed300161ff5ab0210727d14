@@ -1,0 +1,7 @@
+A  #SUP: 4
+A B  #SUP: 3
+A B C  #SUP: 2
+A C  #SUP: 2
+B  #SUP: 3
+B C  #SUP: 2
+C  #SUP: 4

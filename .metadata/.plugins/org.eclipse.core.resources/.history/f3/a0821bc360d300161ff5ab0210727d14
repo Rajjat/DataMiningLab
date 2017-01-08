@@ -1,0 +1,158 @@
+package dominated.seq.mining;
+
+import java.util.List;
+
+
+import dominated.seq.mining.*;
+
+public class PseudoSequence{
+	
+		protected SequenceItemset sequence;
+		protected int firstItemset;
+		protected int firstItem;
+		
+		protected PseudoSequence(){
+			
+		}
+		public SequenceItemset getOriginalSequence() {
+			return sequence;
+		}
+
+		protected PseudoSequence(PseudoSequence sequence, int indexItemset, int indexItem){
+			this.sequence = sequence.sequence;
+			//System.out.println("this seq="+this.sequence );
+			//System.out.println("this indexitem="+indexItem );
+			//System.out.println("this  fisrtitem="+this.firstItem  );
+			
+			this.firstItem = indexItem ;
+		/*	System.out.println("this  fisrtitem baad wala"+this.firstItem  );
+			if(this.firstItem== sequence.firstItem){
+			this.firstItem = indexItem + sequence.firstItem;
+			}else{
+				this.firstItem = indexItem; 
+			}*/
+			
+		}
+		protected  PseudoSequence(SequenceItemset sequence, int indexItemset, int indexItem){
+			this.sequence = sequence;
+			this.firstItemset = indexItemset;
+			this.firstItem = indexItem;
+		}
+
+
+		protected int size() {
+			int size = sequence.size() - firstItem;
+			if(size==1)
+				return 0;
+			
+			return size;
+		}
+		public int getSizeOfItemsetAt(int index) {
+			
+			int size = sequence.getItemsets().size();
+			if(isFirstItemset(index)){
+				size -=  firstItem;
+			}
+			//System.out.println("getsizeofitemset firstitemset ===firstitem size"+firstItemset +" "+firstItem+" "+size);
+			return size; // return the size
+		}
+
+		protected boolean isPostfix(int indexItemset) {
+			return indexItemset == 0  && firstItem !=0;
+		}
+
+		protected boolean isFirstItemset(int index) {
+			return index == 0;
+		}
+		protected boolean isLastItemset(int index) {
+			return (index + firstItemset) == sequence.getItemsets().size() -1;
+		}
+
+		/*	public Character getItemAtInItemsetAt(int indexItem) {
+			//	if(isFirstItemset(indexItemset)){
+			//return getItemset(indexItemset+firstItem);
+		//	}else{// otherwise
+				return getItemset(indexItem);
+			//}
+		}*/
+		public Character getItemAtInItemsetAt(int indexItem) {
+			// if it is in the first itemset
+			if(isFirstItemset(indexItem)){
+				// we need to consider if the itemset was cut at the left
+				// by adding "firstItem"
+				return sequence.get(indexItem + firstItem);
+			}else{// otherwise
+				return sequence.get(indexItem);
+			}
+		}
+
+		public Character getItemset(int index) {
+			return sequence.get(index+firstItemset);
+		
+		}
+
+		protected int getId() {
+			return sequence.getId();
+		}
+	
+		public void print() {
+			System.out.print(toString());
+		}
+
+		public String toString() {
+			StringBuilder r = new StringBuilder();
+			//System.out.println("size hehe"+size());
+			for(int i=0; i < size(); i++){
+				
+		//	for(int j=0; j < getSizeOfItemsetAt(i); j++){
+					r.append(getItemset(i));
+					//if(isPostfix(i)){
+					//	r.append(' ');
+				//	}
+
+				if(!isLastItemset(i) ){
+						r.append(' ');
+				}
+				//System.out.println("Stringbuikder"+r.toString());
+				}
+				//r.append(""); // end of an itemset
+			
+			
+		//}
+			return r.toString();
+		}
+
+
+		protected int indexOfBis(int indexItemset, Character item) {
+			//System.out.println("---indexItemset and size of each sequence and item"+indexItemset+" "+getSizeOfItemsetAt(indexItemset)+ " "+item);
+			//for(int i=0; i < getSizeOfItemsetAt(indexItemset); i++){
+				//System.out.println("wht is reurned=="+getItemAtInItemsetAt(i,indexItemset));
+				if(getItemAtInItemsetAt(indexItemset).equals(item)){
+				//System.out.println("match inside getitemset="+getItemAtInItemsetAt(indexItemset)+"==iditem="+ "" +item);
+				//System.out.println("i="+i);
+				return indexItemset; // if equal, return the current position
+				}else if(!getItemAtInItemsetAt( indexItemset).equals(item))
+					{
+					/*String a=getItemAtInItemsetAt(i, indexItemset);
+					
+					Character t=a.charAt(0);
+					System.out.println("a="+t);
+					Character l=idItem.charAt(0);
+					System.out.println("l item came ="+l);
+					int k=Character.getNumericValue(l);
+					System.out.println("k="+k);
+					int c=Character.getNumericValue(t);
+					System.out.println("c="+c);
+					if(k > c){*/
+					
+					//}
+				//}	
+					return -1;
+			}
+			 // not found, return -1.
+				return -1;
+		}
+			
+		
+}
+

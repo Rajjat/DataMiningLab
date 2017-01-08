@@ -1,0 +1,1505 @@
+pdt: ----------------------------------
+pdt: Wed Dec 07 03:35:14 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Wed Dec 07 03:35:14 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 07/12 03:37:49 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 03:37:49 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 03:37:49 - Worker-20: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: ----------------------------------
+pdt: Wed Dec 07 23:22:12 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Wed Dec 07 23:22:12 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 07/12 23:27:41 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:27:41 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:27:41 - Worker-2: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:30:28 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:30:28 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:30:28 - Worker-3: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:30:52 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:30:52 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:30:52 - Worker-3: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isCurrent(PDTConsultDecoratorContributor.java:161)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:87)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:31:17 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:31:17 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:31:17 - Worker-11: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:31:39 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:31:39 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:31:39 - Worker-11: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:32:00 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:32:00 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:32:00 - Worker-8: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isCurrent(PDTConsultDecoratorContributor.java:161)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:87)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:32:23 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:32:23 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:32:23 - Worker-3: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:33:15 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:33:15 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:33:15 - Worker-11: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:34:23 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:34:23 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:34:23 - Worker-8: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:35:20 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:35:20 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:35:20 - Worker-17: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:35:41 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:35:41 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:35:41 - Worker-17: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:36:22 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:36:22 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:36:22 - Worker-17: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:37:18 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:37:18 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:37:18 - Worker-9: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:37:48 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:37:48 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:37:48 - Worker-15: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:40:55 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:40:55 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:40:55 - Worker-16: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isCurrent(PDTConsultDecoratorContributor.java:161)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:87)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:41:55 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:41:55 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:41:55 - Worker-11: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isCurrent(PDTConsultDecoratorContributor.java:161)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:87)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:45:29 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/12 23:45:29 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/12 23:45:29 - Worker-17: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: ----------------------------------
+pdt: Thu Dec 08 12:52:56 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Thu Dec 08 12:52:56 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 08/12 12:56:06 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 08/12 12:56:06 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 08/12 12:56:06 - Worker-8: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 09/12 03:20:30 - Framework stop: problems during shutdown of process Default Process
+pdt: WARNING - 09/12 03:20:30 - Framework stop: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.stop(AbstractPrologProcess.java:494)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.stop(SocketPrologProcess.java:266)
+	at org.cs3.pdt.connector.PDTConnectorPlugin.stop(PDTConnectorPlugin.java:236)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:955)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:323)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:144)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: ----------------------------------
+pdt: Sun Dec 11 01:03:23 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Sun Dec 11 01:03:23 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 11/12 01:04:50 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 11/12 01:04:50 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 11/12 01:04:50 - Worker-10: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: ----------------------------------
+pdt: Mon Dec 12 00:24:57 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Mon Dec 12 00:24:57 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 12/12 00:29:33 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 12/12 00:29:34 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 12/12 00:29:38 - Worker-9: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 12/12 00:33:15 - Framework stop: problems during shutdown of process Default Process
+pdt: WARNING - 12/12 00:33:15 - Framework stop: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.stop(AbstractPrologProcess.java:494)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.stop(SocketPrologProcess.java:266)
+	at org.cs3.pdt.connector.PDTConnectorPlugin.stop(PDTConnectorPlugin.java:236)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:827)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:820)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:955)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:323)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1623)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1542)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:248)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:144)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:626)
+	at org.eclipse.osgi.container.Module.stop(Module.java:488)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:186)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:159)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: ----------------------------------
+pdt: Mon Dec 12 01:02:53 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Mon Dec 12 01:02:53 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 12/12 01:05:12 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 12/12 01:05:12 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 12/12 01:05:13 - Worker-10: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: ----------------------------------
+pdt: Sat Dec 24 13:22:55 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Sat Dec 24 13:22:55 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 24/12 13:24:16 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 24/12 13:24:16 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 24/12 13:24:16 - Worker-10: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: ----------------------------------
+pdt: Sun Dec 25 20:01:32 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Sun Dec 25 20:01:32 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 25/12 20:09:45 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 25/12 20:09:45 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 25/12 20:09:45 - Worker-5: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 25/12 20:10:06 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 25/12 20:10:06 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 25/12 20:10:06 - Worker-7: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isCurrent(PDTConsultDecoratorContributor.java:161)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:87)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 25/12 20:14:24 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 25/12 20:14:24 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 25/12 20:14:24 - Worker-16: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 25/12 20:17:51 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 25/12 20:17:51 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 25/12 20:17:51 - Worker-0: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.restart(AbstractPrologProcess.java:440)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:355)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: ----------------------------------
+pdt: Mon Dec 26 02:28:35 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Mon Dec 26 02:28:35 CET 2016
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 26/12 02:29:55 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 26/12 02:29:55 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 26/12 02:29:55 - Worker-14: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: ----------------------------------
+pdt: Sat Jan 07 13:58:14 CET 2017
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: ----------------------------------
+pdt: Sat Jan 07 13:58:14 CET 2017
+pdt: ----------------------------------
+pdt: set debug output to LOGFILE
+pdt: WARNING - 07/01 14:02:05 - Prolog Process Default Process Work: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
+pdt: WARNING - 07/01 14:02:05 - Prolog Process Default Process Work: clearing queue
+pdt: WARNING - 07/01 14:02:06 - Worker-16: pdt: The following Exception was caught:
+org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle.waitUntilUp(LifeCycle.java:131)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.start(AbstractPrologProcess.java:480)
+	at org.cs3.prolog.connector.internal.process.socket.SocketPrologProcess.start(SocketPrologProcess.java:297)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.getSession(AbstractPrologProcess.java:362)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:612)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess.queryAll(AbstractPrologProcess.java:585)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.fillSetsIfNeeded(PDTConsultDecoratorContributor.java:185)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.isContainingFolder(PDTConsultDecoratorContributor.java:171)
+	at org.cs3.pdt.navigator.internal.decorators.PDTConsultDecoratorContributor.decorate(PDTConsultDecoratorContributor.java:116)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:267)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:367)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:349)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:372)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:332)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.cs3.prolog.connector.process.PrologProcessException: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:40)
+	at org.cs3.prolog.connector.internal.lifecycle.LifeCycle$DispatcherThread.run(LifeCycle.java:59)
+Caused by: org.cs3.prolog.connector.process.PrologProcessStartException: Failed to connect to the Prolog process.
+Timeout exceeded.
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.waitForProcessToGetRunning(SocketServerStartAndStopStrategy.java:194)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startSocketServer(SocketServerStartAndStopStrategy.java:118)
+	at org.cs3.prolog.connector.internal.process.socket.SocketServerStartAndStopStrategy.startServer(SocketServerStartAndStopStrategy.java:105)
+	at org.cs3.prolog.connector.internal.process.AbstractPrologProcess$MyLifeCycle.startServer(AbstractPrologProcess.java:229)
+	at org.cs3.prolog.connector.internal.lifecycle.InitState$1.run(InitState.java:38)
+	... 1 more
