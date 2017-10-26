@@ -15,9 +15,9 @@ public class MainClass {
 		geneDatabase.readFile("newcommand.txt");
 		geneDatabase.print();
 		int minsup=242;
-	     FeatAlgoGenerator feat = new FeatAlgoGenerator();
-	     feat.runAlgorithm(geneDatabase, minsup); 
-	     feat.writeResultTofile("output.txt");   
+	        FeatAlgoGenerator feat = new FeatAlgoGenerator();
+	        feat.runAlgorithm(geneDatabase, minsup); 
+	        feat.writeResultTofile("output.txt");   
 	}
 
 }
