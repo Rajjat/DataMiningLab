@@ -20,12 +20,7 @@ public class PseudoSequence{
 
 		protected PseudoSequence(PseudoSequence sequence, int indexItemset, int indexItem){
 			this.sequence = sequence.sequence;
-			//System.out.println("this seq="+this.sequence );
-			//System.out.println("this indexitem="+indexItem );
-			//System.out.println("this  seqfisrtitem="+sequence.firstItem  );
-			
 			this.firstItem = indexItem ;
-		//	System.out.println("this  fisrtitem baad wala"+this.firstItem  );
 			if(this.firstItem== sequence.firstItem){
 			this.firstItem = indexItem + sequence.firstItem;
 			}else{
@@ -52,7 +47,6 @@ public class PseudoSequence{
 			if(isFirstItemset(index)){
 				size -=  firstItem;
 			}
-			//System.out.println("getsizeofitemset firstitemset ===firstitem size"+firstItemset +" "+firstItem+" "+size);
 			return size; // return the size
 		}
 
@@ -66,14 +60,6 @@ public class PseudoSequence{
 		protected boolean isLastItemset(int index) {
 			return (index + firstItem) == sequence.getItemsets().size() -1;
 		}
-
-		/*	public Character getItemAtInItemsetAt(int indexItem) {
-			//	if(isFirstItemset(indexItemset)){
-			//return getItemset(indexItemset+firstItem);
-		//	}else{// otherwise
-				return getItemset(indexItem);
-			//}
-		}*/
 		public Character getItemAtInItemsetAt(int indexItem) {
 			// if it is in the first itemset
 			if(isFirstItemset(indexItem)){
@@ -100,55 +86,22 @@ public class PseudoSequence{
 
 		public String toString() {
 			StringBuilder r = new StringBuilder();
-		//	System.out.println("size and first item is "+size()+ " "+firstItem+"this.seq="+this.sequence);
 			for(int i=0; i < size(); i++){
-				
-		//	for(int j=0; j < getSizeOfItemsetAt(i); j++){
 					r.append(getItemset(i));
-					//if(isPostfix(i)){
-					//	r.append(' ');
-				//	}
-
+			
 				if(!isLastItemset(i) ){
 						r.append(' ');
 				}
-		//		System.out.println("Stringbuilder"+r.toString());
-				}
-				//r.append(""); // end of an itemset
-			
-			
-		//}
 			return r.toString();
 		}
 
 
 		protected int indexOfBis(int indexItemset, Character item) {
-			//System.out.println("---indexItemset and size of each sequence and item"+indexItemset+" "+getSizeOfItemsetAt(indexItemset)+ " "+item);
-			//for(int i=0; i < getSizeOfItemsetAt(indexItemset); i++){
-				//System.out.println("wht is reurned=="+getItemAtInItemsetAt(i,indexItemset));
 				if(getItemAtInItemsetAt(indexItemset).equals(item)){
-				//System.out.println("match inside getitemset="+getItemAtInItemsetAt(indexItemset)+"==iditem="+ "" +item);
-				//System.out.println("i="+i);
-				return indexItemset; // if equal, return the current position
+						return indexItemset; // if equal, return the current position
 				}else if(!getItemAtInItemsetAt( indexItemset).equals(item))
-					{
-					/*String a=getItemAtInItemsetAt(i, indexItemset);
-					
-					Character t=a.charAt(0);
-					System.out.println("a="+t);
-					Character l=idItem.charAt(0);
-					System.out.println("l item came ="+l);
-					int k=Character.getNumericValue(l);
-					System.out.println("k="+k);
-					int c=Character.getNumericValue(t);
-					System.out.println("c="+c);
-					if(k > c){*/
-					
-					//}
-				//}	
 					return -1;
 			}
-			 // not found, return -1.
 				return -1;
 		}
 			
