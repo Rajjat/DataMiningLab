@@ -35,95 +35,72 @@ public class FeatAlgoGenerator {
 	 return null;
 
  }
- private void feat(GenesDatabase database) throws IOException{
+ private void feat(GenesDatabase database) throws IOException
+ {
 	 generators = new ArrayList<SequentialPattern>();
 	 Map<Character, Set<Integer>> sequenceID = findSequencesContainingItems(database);
-	// System.out.println("map sequence ccraeted"+sequenceID);
-
 	 dbinitial = new ArrayList<PseudoSequence>();
 		// for each sequence in  the database
 		for(SequenceItemset sequence : database.getSequences()){
 			// remove infrequent items
-		//	System.out.println("sequnce iteration"+sequence);
 			SequenceItemset optimizedSequence = sequence.cloneSequenceMinusItems(sequenceID, support);
-			//System.out.println("optimised sequence"+ optimizedSequence.getItemsets());
-		
-		
 			if(optimizedSequence.size() != 0){
 				// if the size is > 0, create a pseudo sequence with this sequence
 				dbinitial.add(new PseudoSequence(optimizedSequence, 0,0));
 			}
-			//System.out.println("optimised sequence"+ optimizedSequence);
-		}
-		System.out.println("intial database"+ dbinitial);	
-		System.out.println("----------------------------------------------------------------------------");	
-	for(Entry<Character, Set<Integer>> entry : sequenceID.entrySet()){
+		}	
+	  for(Entry<Character, Set<Integer>> entry : sequenceID.entrySet())
+	  {
 			// if the item is frequent  (has a support >= minsup)
-			if(entry.getValue().size() >= support){ 
+			if(entry.getValue().size() >= support)
+			{ 
 				Character item = entry.getKey();
 				SequentialPattern prefix = new SequentialPattern();  
 				prefix.addItemset(new Itemsetcreate(item));
-				prefix.setSequenceIDs(entry.getValue());
-				//System.out.println("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII");
-				System.out.println("item dbintial entry.getvalue ="+item +" "+dbinitial+" "+ entry.getValue());	
+				prefix.setSequenceIDs(entry.getValue());	
 				List<PseudoSequence> projectedDatabase
 				  = buildProjectedDatabaseForSingleItem(item, dbinitial, entry.getValue());
 				boolean canPrune = false;
-				boolean isGenerator = true;
-				System.out.println("dbinitial.size() == entry.getValue().size()) "+dbinitial.size() +"== "+entry.getValue().size());
-				
-			if(dbinitial.size() == entry.getValue().size()) {
-					// check forward pruning
+				boolean isGenerator = true;				
+			        if(dbinitial.size() == entry.getValue().size()) 
+				{
 					canPrune = checkforwardPruningFor1ItemSequence(item, projectedDatabase);
-					//System.out.println("canprune="+canPrune);
 					isGenerator = false;
 				}
-				if(isGenerator) {
+				if(isGenerator) 
+				{
 					savePattern(prefix); 
 				}
-				// patterns starting with this prefix
-				//System.out.println("prefix is="+prefix);
-				System.out.println("projected databse and item  and prefix ="+projectedDatabase +" "+ item +" "+ prefix);
-				System.out.println("******************************************************************");
-				if((performPruning == false || !canPrune) && maximumPatternLength >1){
+				if((performPruning == false || !canPrune) && maximumPatternLength >1)
+				{
 					featRecursion(prefix, projectedDatabase, 2); 
 				}else {
 				prefixPrunedCount++;
-			}
-
-				//System.out.println("dbinitial.size() == entry.getValue().size()"+dbinitial.size()+" =="+ entry.getValue().size());
-		
-			}
-		}
+			        }
+		      }
+	}
  }
 		
-	private Map<Character, Set<Integer>> findSequencesContainingItems(GenesDatabase database) {
+private Map<Character, Set<Integer>> findSequencesContainingItems(GenesDatabase database) 
+{
 		Map<Character, Set<Integer>> mapSequenceID = new HashMap<Character, Set<Integer>>(); 
 		for(SequenceItemset sequence : database.getSequences()){
 			for(Character item : sequence.getItemsets()){
-				//for(List<Character> item : sequence){
 					Set<Integer> IDs = mapSequenceID.get(item);
-					//System.out.println("sequenceIDs="+IDs);
-					
 					if(IDs == null){
-						IDs = new HashSet<Integer>();
-						
+						IDs = new HashSet<Integer>();						
 						mapSequenceID.put(item, IDs);
-						//System.out.println("sequenceIDs if null=="+item +"    "  +IDs);
 					}
-					
 					IDs.add(sequence.getId());
 				}
 			}
 		
 		return mapSequenceID;
-	}
+}
 	
-	private List<PseudoSequence> buildProjectedDatabaseForSingleItem(Character item, List<PseudoSequence> initialDatabase,Set<Integer> sidSet) {
-		// We create a new projected database
-		List<PseudoSequence> sequenceDatabase = new ArrayList<PseudoSequence>();
-	//	System.out.println("Inti size"+initialDatabase.size());
-    // System.out.println("item:"+item);
+private List<PseudoSequence> buildProjectedDatabaseForSingleItem(Character item, List<PseudoSequence> initialDatabase,Set<Integer> sidSet) {
+		
+     List<PseudoSequence> sequenceDatabase = new ArrayList<PseudoSequence>();
 		// for each sequence in the database received as parameter
 		for(PseudoSequence sequence : initialDatabase){ 
 
@@ -131,94 +108,58 @@ public class FeatAlgoGenerator {
 			if(!sidSet.contains(sequence.getId())){
 				continue;
 			}
-			//System.out.println("seq size"+sequence.size());
 			for(int i = 0; i< sequence.size(); i++){
-				// System.out.println("intial data base in build project="+sequence.toString());
 				int index = sequence.indexOfBis(i, item);
-				// System.out.println(" index computed=" +index);
 				if(index == -1 ){
 					continue;
 				}
-				//System.out.println("comaprsion="+ ""+ sequence.getSizeOfItemsetAt(i));
-				//if(index == sequence.getSizeOfItemsetAt(i)-1){ 
-				//	if ((i != sequence.size()-1)){
-					///	sequenceDatabase.add(new PseudoSequence( sequence, i+1, 0));
-				///	}
 				else{
 					if ((i != sequence.size()-1)){
-					//System.out.println("sequence added with");
 					sequenceDatabase.add(new PseudoSequence(sequence, 0, i+1));
 					}
 				}
 
 			}
-			//System.out.println("projected datatbase again for item"+item+" "+sequenceDatabase);
 		}
-		//System.out.println("projected datatbase again for item"+item+" "+sequenceDatabase.toString());
-	/*	for(PseudoSequence sequence : sequenceDatabase){
-			// for each itemset
-			System.out.println("sequence is="+sequence+"and its size is="+(sequence.size()));
-			for(int i=0; i< sequence.size(); i++){
-				Character item1 = sequence.getItemset(i);
-				System.out.println("helo item is="+item1);
-			}
-			}
-*/
 		return sequenceDatabase; 
-	}
+  }
 	
-	private boolean checkforwardPruningFor1ItemSequence(Character item,
-			List<PseudoSequence> projectedDatabase) {
-		//System.out.println("projecteddatabse---------------"+projectedDatabase);
-		// There is a forward extension if the item of the prefix appeared in the first
-		// position of each sequence.
+private boolean checkforwardPruningFor1ItemSequence(Character item,
+			List<PseudoSequence> projectedDatabase) 
+{
+       for(PseudoSequence seq : projectedDatabase) {
 		
-		// for each sequence
-		for(PseudoSequence seq : projectedDatabase) {
-		//	System.out.println("Seq---------------"+seq);
-			// we use the first item of the ORIGINAL sequence:
-			Character firstItem = seq.getOriginalSequence().get(0);
-         //  System.out.println("original seq and first item  and item== "+seq.getOriginalSequence()+" "+firstItem +"and"+item);
-			// if not the same item
-			if(!firstItem.equals(item)) {
-			//	 System.out.println("can not prune");
+	// we use the first item of the ORIGINAL sequence:
+	Character firstItem = seq.getOriginalSequence().get(0);
+	if(!firstItem.equals(item)) {
 				return false; // cannot prune
 			}
 		}
 		return true; // can prune
 	}
 	private void savePattern(SequentialPattern prefix) throws IOException {
-		// increase the number of pattern found for statistics purposes
 		generators.add(prefix);
 	}
 
 private void featRecursion(SequentialPattern prefix, List<PseudoSequence> database, int k) throws IOException {	
 	// find frequent items of size 1 in the current projected database.
-	System.out.println("I am in featrecursion");
 
 	Set<Pair> pairs = findAllFrequentPairs(database);
-  // System.out.println("pairs"+pairs);
-	// For each pair found (a pair is an item with a boolean indicating if it
-	// appears in an itemset that is cut (a postfix) or not, and the sequence IDs
-	// where it appears in the projected database).
-	for(Pair pair : pairs){
+ 	for(Pair pair : pairs){
 		// if the item is frequent in the current projected database
 		if(pair.getCount() >= support){
 			// create the new postfix by appending this item to the prefix
 			SequentialPattern newPrefix;
-			System.out.println("pair.getitem "+pair.getItem()+" and prefix="+prefix);
 			// if the item is part of a postfix
 			if(pair.isPostfix()){ 
-				//System.out.println("hello");
 				// we append it to the last itemset of the prefix
 				newPrefix = appendItemToPrefixOfSequence(prefix, pair.getItem()); 
 			}else{
-				//System.out.println("Yello");// else, we append it as a new itemset to the sequence
+                         // else, we append it as a new itemset to the sequence
 				newPrefix = appendItemToSequence(prefix, pair.getItem());
 			}
 			newPrefix.setSequenceIDs(pair.getSequenceIDs()); 
 			PairSequences projectedDatabase = buildProjectedDatabase(pair.getItem(), database, pair.getSequenceIDs(), pair.isPostfix());
-          System.out.println("newprefix="+newPrefix.toString());
 			boolean canPrune = false;
 			boolean isGenerator = true;
 			
@@ -226,19 +167,15 @@ private void featRecursion(SequentialPattern prefix, List<PseudoSequence> databa
 				// check forward pruning
 				canPrune = checkForwardPruningGeneralCase(projectedDatabase, pair.getItem(), pair.isPostfix());
 				isGenerator = false;
-//				System.out.println(prefix);
 			}	
 			
 			if(!canPrune) { 
-//				System.out.println(newPrefix);
 				Boolean[] returnValues = checkBackwardPruning(newPrefix, projectedDatabase.newSequences, isGenerator);
 				isGenerator = returnValues[0];
 				canPrune = returnValues[1];
 			}
 			
-			//if(isGenerator && newPrefix.getItemsets().size() <= 6) {
 			if(isGenerator){
-				System.out.println("^^^^^^^^^^^^^^^^^^isGenertor^^^^^^^^^="+newPrefix);
 			savePattern(newPrefix); 
 			}
 			
@@ -252,26 +189,13 @@ private void featRecursion(SequentialPattern prefix, List<PseudoSequence> databa
 			
 		}
 	}
-	// check the current memory usage
-	//MemoryLogger.getInstance().checkMemory();
 }
 protected Set<Pair> findAllFrequentPairs(List<PseudoSequence> sequences){
 	// We use a Map the store the pairs.
 	Map<Pair, Pair> mapPairs = new HashMap<Pair, Pair>();
-	System.out.println("sprojected databse came  ="+ sequences +"and its size is= " +sequences.size());
-	// for each sequence
-	//System.out.println("deqprojection  is"+sequences);
-	//System.out.println("sprojected databse came  ="+ sequences +"and its size is= " +sequences.size());
 	for(PseudoSequence sequence : sequences){
-		// for each itemset
-	//	System.out.println("sequence is="+sequence+"and its size is="+(sequence.size()));
-		System.out.println("sequence is="+sequence+"and its size is="+sequence.size());
 		for(int i=0; i< sequence.size(); i++){
-			// for each item
-		//	for(int j=0; j < sequence.getSizeOfItemsetAt(i); j++){
 				Character item = sequence.getItemset(i);
-		//		System.out.println("item is"+item);
-				// create the pair corresponding to this item
 				Pair pair = new Pair(sequence.isPostfix(i), item);   
 				// get the pair object store in the map if there is one already
 				Pair oldPair = mapPairs.get(pair);
@@ -279,8 +203,6 @@ protected Set<Pair> findAllFrequentPairs(List<PseudoSequence> sequences){
 				if(oldPair == null){
 					// store the pair object that we created
 					mapPairs.put(pair, pair);
-				//	System.out.println("put my map="+mapPairs.get(pair).toString().charAt(0));
-					
 				}else{
 					// otherwise use the old one
 					pair = oldPair;
@@ -289,11 +211,7 @@ protected Set<Pair> findAllFrequentPairs(List<PseudoSequence> sequences){
 				pair.getSequenceIDs().add(sequence.getId());
 			}
 		}
-	
-	//MemoryLogger.getInstance().checkMemory();  // check the memory for statistics.
-	// return the map of pairs
-	//System.out.println("map pairs"+mapPairs.keySet().size());
-	return mapPairs.keySet();
+		return mapPairs.keySet();
 }
 private SequentialPattern appendItemToPrefixOfSequence(SequentialPattern prefix, Character item) {
 	SequentialPattern newPrefix = prefix.cloneSequence();
@@ -313,16 +231,11 @@ private class PairSequences{
 private PairSequences buildProjectedDatabase(Character item, List<PseudoSequence> database, Set<Integer> sidset, boolean inPostFix) {
 	// We create a new projected database
 	PairSequences sequenceDatabase = new PairSequences();
-//System.out.println("in buildProjectedDatabase item is ="+item+" dtabase is="+database+" sidset="+sidset+" inpostfix="+inPostFix);
-	//System.out.println("in buildProjectedDatabase----------------------------llll----");
-	// for each sequence in the database received as parameter
 	for(PseudoSequence sequence : database){ 
-		//System.out.println("sequence inside projected databse="+sequence);
 		if(sidset.contains(sequence.getId()) == false){
 			continue;
 		}
 		
-		// for each itemset of the sequence
 		for(int i = 0; i< sequence.size(); i++){
              
 			if (sequence.isPostfix(i) != inPostFix){
@@ -333,55 +246,18 @@ private PairSequences buildProjectedDatabase(Character item, List<PseudoSequence
 
 			// check if the itemset contains the item that we use for the projection
 			int index = sequence.indexOfBis(i, item);
-			//System.out.println("index is "+index);
 			// if it does not, move to next itemset
 			if(index == -1 ){
 				continue;
 			}
-			//System.out.println("comaprsion="+ ""+ sequence.getSizeOfItemsetAt(i));
-			//if(index == sequence.getSizeOfItemsetAt(i)-1){ 
-			//	if ((i != sequence.size()-1)){
-				///	sequenceDatabase.add(new PseudoSequence( sequence, i+1, 0));
-			///	}
-		
 				if ((i != sequence.size()-1)){
-				//System.out.println("sequence added with sequence"+sequence+" and index i="+i);;
-				//sequenceDatabase.add(new PseudoSequence(sequence, 0, i+1));
 					sequenceDatabase.newSequences.add(new PseudoSequence( sequence, 0, i+1));
 					sequenceDatabase.olderSequences.add(sequence);
 				}
 			
 
 		}
-	}//System.out.println("projected datatbase again for item"+item+" "+sequenceDatabase);
-	
-	//System.out.println("projected datatbase again for item"+item+" "+sequenceDatabase.newSequences);
-			
-			// if the item is the last item of this itemset
-			/*if(index == sequence.getSizeOfItemsetAt(i)-1){ 
-				// if it is not the last itemset
-				if ((i != sequence.size()-1)){
-					// create new pseudo sequence
-					// add it to the projected database.
-//					PairSequences pair = new PairSequences();
-					sequenceDatabase.newSequences.add(new PseudoSequence( sequence, i+1, 0));
-					sequenceDatabase.olderSequences.add(sequence);
-//					sequenceDatabase.add(pair);
-					//System.out.println(sequence.getId() + "--> "+ newSequence.toString());
-//					break itemsetLoop;
-				}
-			}else{
-				// create a new pseudo sequence and
-				// add it to the projected database.
-//				PairSequences pair = new PairSequences();
-				sequenceDatabase.newSequences.add(new PseudoSequence(sequence, i, index+1));
-				sequenceDatabase.olderSequences.add(sequence);
-//				sequenceDatabase.add(pair);
-				//System.out.println(sequence.getId() + "--> "+ newSequence.toString());
-//				break itemsetLoop;
-			}*/
-		
-	
+	}
 	return sequenceDatabase; // return the projected database
 }
 private boolean checkForwardPruningGeneralCase(PairSequences projectedDatabase, Character item, boolean postfix) {
@@ -424,16 +300,14 @@ private boolean checkForwardPruningGeneralCase(PairSequences projectedDatabase, 
 }
 private Boolean[] checkBackwardPruning(SequentialPattern newPrefix,
 		List<PseudoSequence> projectedDatabase, boolean isGeneratorParameter) {
-	System.out.println("newPrefix is" +newPrefix+" and itrs projectio is " +"projecteddatabse came**************** "+projectedDatabase+"isgenertor=="+isGeneratorParameter);
 	// initialize variables for returning values
 	boolean isGenerator = isGeneratorParameter;
 	boolean canPrune = false;
 	
 	// calculate the size of this prefix
 	int prefixTotalSize = newPrefix.getItemOccurencesTotalCount();
-System.out.println("prefixTotalSize="+prefixTotalSize);
 	// for each item j 
-loop:	for(int j = 1; j < prefixTotalSize; j++) {
+      loop:	for(int j = 1; j < prefixTotalSize; j++) {
 
 		// Create the truncated prefix
 		List<List<Character>> prefixTruncated = new ArrayList<List<Character>>();
@@ -469,14 +343,11 @@ loop:	for(int j = 1; j < prefixTotalSize; j++) {
 				
 				// we check if the prefix and the prefix without i have
 				// the same projection or not
-				System.out.println("original seq sent="+originalSequence+"prefix truncaated="+prefixTruncated);
 				ProjectionEnum result = sameProjection(originalSequence, newItemset, i);
 				
 				// if the sequence contain the prefix without i, we increase its support
 				if(result.equals(ProjectionEnum.SAME_PROJECTION) ||
 						result.equals(ProjectionEnum.CONTAIN_PREFIX_WITHOUT_I)) {
-					System.out.println("SAME_PROJECTION||CONTAIN_PREFIX_WITHOUT_I");
-					System.out.println("original seq sent="+originalSequence+"prefix truncaated="+prefixTruncated);
 					supCount++;
 				}
 				
@@ -507,7 +378,6 @@ loop:	for(int j = 1; j < prefixTotalSize; j++) {
 				}
 			}
 			if(supCount == newPrefix.getAbsoluteSupport()) {
-				System.out.println("%%%%%%%%");
 				isGenerator = false;
 			}
 			
@@ -528,30 +398,18 @@ private ProjectionEnum sameProjection(PseudoSequence originalSequence,
 		List<Character> newItemset, int i) {
 	
 	// CALCULATE THE PROJECTION WITHOUT I
-	System.out.println("prefix="+newItemset+"and i="+i+ "and original seq is="+originalSequence);
 	int projectionWithoutI = -1;
 	//int itemsetPos = 0;
 	int itemsetPos = 1;
 	// determine item I or null if not in this itemset
 	Character itemI = null;
-	/*if(i < newItemset.get(itemsetPos).size()) {
-		System.out.println("prefix.get(itemsetPos).size()="+newItemset.get(itemsetPos).size());
-		// if there is only a single item, we just move to the next itemset
-		if(newItemset.get(itemsetPos).size()==1) {
-			itemsetPos++;
-			i--;
-	}
-	}*/
-	System.out.println("itempos="+itemsetPos);
 	// for each itemset of the sequence
 	for(int k = 0; k < originalSequence.size(); k++) {
 		Character itemsetSequence = originalSequence.getItemset(k);	
-		System.out.println("itemsetSequence= "+itemsetSequence+" originalSequence.size()="+ originalSequence.size());
 		// check containment
 		boolean contained = true;
 		Character item =newItemset.get(itemsetPos);
 			if(item != itemI && itemsetSequence!=item) {
-				System.out.println("item=iiiiiiiiiiii"+item);
 				contained = false;
 			
 			}
@@ -559,27 +417,16 @@ private ProjectionEnum sameProjection(PseudoSequence originalSequence,
 		
 		if(contained) {
 			//i-= newItemset.get(itemsetPos).size();
-			System.out.println("contained="+i);
 			// move to next itemset
 			itemsetPos++;
 			
 			if(itemsetPos == newItemset.size()) {
 				projectionWithoutI = k;
-				System.out.println("projectionWithoutI="+projectionWithoutI);
 				break;	
 			}
 			
 			// update item I
 			itemI = null;
-			/*if(i < newItemset.get(itemsetPos).size() && i >=0) {
-				// if there is only a single item, we just move to the next itemset
-				if(newItemset.get(itemsetPos).size()==1) {
-					itemsetPos++;
-					i--;
-				}else {*/
-					// otherwise, there is more than one item so we set item I correctly
-				//	itemI = newItemset.get(i);
-				
 			}
 		}
 	
@@ -590,8 +437,7 @@ private ProjectionEnum sameProjection(PseudoSequence originalSequence,
 	
 	// for each itemset of the sequence
 	for(int k = 0; k < originalSequence.size(); k++) {
-		Character itemsetSequence = originalSequence.getItemset(k);	
-		System.out.println("itemsetSequence="+itemsetSequence);
+		Character itemsetSequence = originalSequence.getItemset(k);
 		// check containment
 		boolean contained = true;
 		Character item =newItemset.get(itemsetPos);
@@ -606,9 +452,7 @@ private ProjectionEnum sameProjection(PseudoSequence originalSequence,
 			itemsetPos++;
 			
 			if(itemsetPos == newItemset.size()) {
-				System.out.println("itemsetPos == prefix.size()");
 				projectionWithI = k;
-				System.out.println("projectionWithI ="+projectionWithI);
 				break;	
 			}
 		}
@@ -617,17 +461,14 @@ private ProjectionEnum sameProjection(PseudoSequence originalSequence,
 	// if same projection
 	if(projectionWithI == projectionWithoutI) {
 		if(projectionWithI > 0) {
-			System.out.println("ProjectionEnum.SAME_PROJECTION");
 			return ProjectionEnum.SAME_PROJECTION;
 		}else {
-			System.out.println("ProjectionEnum.SAME_PROJECTION_NOT_CONTAINED_IN");
 			return ProjectionEnum.SAME_PROJECTION_NOT_CONTAINED_IN;
 		}
 	}
 
 	// if the prefix without i occurred in this sequence
 	if(projectionWithoutI >=0) {
-		System.out.println("ProjectionEnum.CONTAIN_PREFIX_WITHOUT_I");
 		return ProjectionEnum.CONTAIN_PREFIX_WITHOUT_I;
 	}
 	// should not occur
@@ -644,9 +485,6 @@ public void writeResultTofile(String path) throws IOException {
 		for(Itemsetcreate itemset : pattern.getItemsets()){
 			// for each item
 			for(Character item : itemset.getItems()){
-				//count++;
-				//if(count>=3)
-				//	break;
 				buffer.append(item.toString()); // add the item
 				buffer.append(' ');
 				
@@ -669,7 +507,6 @@ public void writeResultTofile(String path) throws IOException {
 		
 		writer.write(buffer.toString());
 		writer.newLine();
-//		System.out.println(buffer);
 	}
 	
 	writer.close();
