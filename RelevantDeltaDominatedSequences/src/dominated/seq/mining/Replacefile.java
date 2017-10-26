@@ -39,8 +39,6 @@ public class Replacefile {
 	         }
 	     }
 }
-	 //experiment data1=new experiment();
-     // data1.fun1();
 
 	  
 
