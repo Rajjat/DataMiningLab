@@ -9,16 +9,10 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-
-
 import dominated.seq.mining.*;
 
-public class GenesDatabase {
-	//private final List<List<Character>> items = new ArrayList<List<Character>>(); 
+public class GenesDatabase {	 
 	private final List<SequenceItemset> sequences = new ArrayList<SequenceItemset>();
-//	private final SequenceItemset sequences=null;
-	
 	public void readFile(String path) throws IOException {
 		String currentline;
 		BufferedReader myInput = null;
@@ -26,17 +20,16 @@ public class GenesDatabase {
 			FileInputStream fileinput = new FileInputStream(new File(path));
 			myInput = new BufferedReader(new InputStreamReader(fileinput));
 			int i=1;
-			while ((currentline = myInput.readLine()) != null) {
-				if (currentline.isEmpty() == false ) {
-                // System.out.println(" " +i+ " "+currentline);
-                  if(currentline.contains("-"))//considering only negative sequences
-                 {
-               	  seqAdd(currentline);
-                   // if(i>769)
-                    //	break;
-				}
-                 i++;
-				}
+			while ((currentline = myInput.readLine()) != null) 
+			{
+				if (currentline.isEmpty() == false )
+				{
+                                  if(currentline.contains("-"))//considering only negative sequences
+                                   {
+               	                      seqAdd(currentline);
+                                    }
+                                    i++;
+		                 }
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -48,9 +41,7 @@ public class GenesDatabase {
 	}
 
 	void seqAdd(String tokens) { 
-		//System.out.println("sequence "+tokens);
 		char[] charArray=tokens.toCharArray();
-		//List<Character> itemset = new ArrayList<Character>();
 		SequenceItemset sequence=new SequenceItemset(sequences.size());
 		List<Character> item = new ArrayList<Character>();
 		for(int i=0;i<charArray.length;i++)
@@ -64,69 +55,8 @@ public class GenesDatabase {
 			item.add(charArray[i]);
 			}
 		}
-		//sequences.add(sequence.);
-		//SequenceItemset sequence = new SequenceItemset(sequences.size());
-		//System.out.println("sequence size"+sequence.getItemsets());
 		sequences.add(sequence);
-		/*                                    for (SequenceItemset sequence1 : sequences){
-					sequence1.print();
-		}*/
-	//	private final List<SequenceItemset> sequences = new ArrayList<SequenceItemset>();
-	//	sequences.addItemset(itemset);
-		//System.out.println("hi"+sequences.toString());
-		//System.out.println("tokens"+tokens);
-	//	List<String> itemset = new ArrayList<String>();
-		/*char[][] a1 = new char[tokens.length][];
-		
-		for(int i =0;i<tokens.length;i++){
-		    a1[i]=tokens[i].toCharArray();
-		    System.out.println("char len"+a1[i].toString()); 
-		}
-
-		int total=0;
-		for(int i =0;i<tokens.length;i++){
-		    total = total + a1[i].length;
-		}
-		char[] allchar = new char[total];
-		int counter = 0; // Counter as the index of your allChar array
-		for (int i = 0; i < a1.length; i++) { 
-		    for (int j = 0; j < a1[i].length; j++) { // nested for loop - typical 2d array format
-		        allchar[counter++] = a1[i][j];
-		        System.out.println("char array"+allchar[counter]);// copying it to the new array
-		    }
-		}*/
-		//Character[] a=new Character();
-		/*for (int i =0;i<= tokens.length() - 1; i++) {
-			if(tokens.charAt(i)=='-')
-					{
-				    continue;
-					}
-			else if(tokens.charAt(i)==' ')
-			{
-				continue;
-			}
-					
-	          a= tokens.charAt(i);
-	         }
-	    }
-			//System.out.println(token);
-			/*else if(token.equals("1"))
-			{
-			   sequence.addItemset(itemset);
-		        itemset = new ArrayList<String>();
-		//	System.out.println("itemset"+sequence.getItemsets());
-			}
-			else if(token.equals("3")) { 
-				sequences.add(sequence);
-				//System.out.println("sequence"+sequences.toString());
-			}
-			else
-			{
-			 itemset.add(token);
-		   //  System.out.println("each charachter"+itemset);
-			}
-					
-		}	*/	
+		                                 
 	}
 	public void print() 
 	{
