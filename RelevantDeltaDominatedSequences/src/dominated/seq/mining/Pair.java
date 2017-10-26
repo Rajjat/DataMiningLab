@@ -44,8 +44,7 @@ class Pair{
 	 * Method to calculate an hashcode (because pairs are stored in a map).
 	 */
 	public int hashCode()
-	{// Ex: 127333,P,X,1  127333,N,Z,2
-		// transform it into a string
+	{
 		StringBuilder r = new StringBuilder();
 		r.append((postfix ? 'P' : 'N')); // the letters here have no meanings. they are just used for the hashcode
 		r.append(item);
