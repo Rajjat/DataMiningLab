@@ -101,15 +101,6 @@ public class SequentialPattern {
 			}
 			r.append(')');// end of an itemset
 		}
-//
-//		//  add the list of sequence IDs that contains this pattern.
-//		if(getSequencesID() != null){
-//			r.append("  Sequence ID: ");
-//			for(Integer id : getSequencesID()){
-//				r.append(id);
-//				r.append(' ');
-//			}
-//		}
 		return r.append("    ").toString();
 	}
 	
